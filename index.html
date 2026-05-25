@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK Budi Bakti Ciwidey</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#F8FAFC] text-slate-800 antialiased">
+
+    <header id="navbar" class="bg-white/90 backdrop-blur-md fixed top-0 w-full z-50 transition-all duration-300 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="thlogo smk.jfif" alt="Logo SMK Budi Bakti" class="h-10 w-10 rounded-x1 object-cover">
+                <div>
+                    <span class="font-extrabold text-sm sm:text-base text-blue-950 block tracking-tight leading-none">SMK BUDI BAKTI</span>
+                    <span class="text-xs font-bold text-blue-600 tracking-widest uppercase">Ciwidey</span>
+                </div>
+            </div>
+            
+            <nav class="hidden lg:flex space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#beranda" class="text-blue-600 border-b-2 border-blue-600 pb-1">Beranda</a>
+                <a href="#profil" class="hover:text-blue-600 transition">Profil</a>
+                <a href="#jurusan" class="hover:text-blue-600 transition">Kompetensi Keahlian</a>
+                <a href="#keunggulan" class="hover:text-blue-600 transition">Fasilitas</a>
+                <a href="#kontak" class="hover:text-blue-600 transition">Informasi</a>
+                <a href="#kontak" class="hover:text-blue-600 transition">Kontak</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hidden sm:inline-flex bg-blue-600 text-white text-sm font-bold px-5 py-2.5 rounded-full hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/20 transition-all items-center gap-2">
+                    Daftar Sekarang <i class="ri-arrow-right-line"></i>
+                </a>
+                <button id="menu-btn" class="lg:hidden text-slate-700 text-2xl focus:outline-none p-1">
+                    <i id="menu-icon" class="ri-menu-3-line"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 absolute w-full left-0 px-6 py-4 shadow-xl space-y-4 font-semibold">
+            <a href="#beranda" class="block text-blue-600 py-2">Beranda</a>
+            <a href="#profil" class="block text-slate-600 py-2 hover:text-blue-600">Profil</a>
+            <a href="#jurusan" class="block text-slate-600 py-2 hover:text-blue-600">Kompetensi Keahlian</a>
+            <a href="#keunggulan" class="block text-slate-600 py-2 hover:text-blue-600">Fasilitas</a>
+            <a href="#kontak" class="block text-slate-600 py-2 hover:text-blue-600">Kontak</a>
+            <a href="#" class="block bg-blue-600 text-white text-center py-3 rounded-xl text-sm">Daftar Sekarang</a>
+        </div>
+    </header>
+
+    <section id="beranda" class="pt-32 pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <span class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-600 bg-amber-50 px-3 py-1.5 rounded-full border border-amber-200/60 shadow-xs">
+                ⭐ Masa Depan Dimulai di Sini
+            </span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-blue-950 leading-[1.1] tracking-tight">
+                Ayo Bergabung di <br><span class="text-blue-600">SMK Budi Bakti Ciwidey</span>
+            </h1>
+            <p class="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                Kami siap membekali kamu dengan ilmu, keterampilan, dan karakter untuk menjadi generasi siap kerja, berwirausaha, dan berkarya.
+            </p>
+            
+            <div class="grid grid-cols-3 gap-3 max-w-md mx-auto lg:mx-0 pt-2 text-left">
+                <div class="bg-white p-3 rounded-xl border border-slate-200/80 shadow-xs flex items-center gap-2">
+                    <div class="w-7 h-7 rounded-lg bg-blue-100 flex items-center justify-center text-blue-600 text-sm"><i class="ri-briefcase-4-line"></i></div>
+                    <span class="text-xs font-bold text-slate-700 leading-tight">Kompeten Siap Kerja</span>
+                </div>
+                <div class="bg-white p-3 rounded-xl border border-slate-200/80 shadow-xs flex items-center gap-2">
+                    <div class="w-7 h-7 rounded-lg bg-amber-100 flex items-center justify-center text-amber-600 text-sm"><i class="ri-heart-pulse-line"></i></div>
+                    <span class="text-xs font-bold text-slate-700 leading-tight">Kreatif&Inovatif</span>
+                </div>
+                <div class="bg-white p-3 rounded-xl border border-slate-200/80 shadow-xs flex items-center gap-2">
+                    <div class="w-7 h-7 rounded-lg bg-purple-100 flex items-center justify-center text-purple-600 text-sm"><i class="ri-git-repository-line"></i></div>
+                    <span class="text-xs font-bold text-slate-700 leading-tight">Berbasis Industri</span>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap gap-4 justify-center lg:justify-start pt-4">
+                <a href="#" class="bg-blue-600 text-white font-bold px-7 py-3.5 rounded-full shadow-lg shadow-blue-500/20 hover:bg-blue-700 transition">Daftar Sekarang &rarr;</a>
+                <a href="https://youtu.be/soeCZeCKaEw?si=Nwu3Y5y3nD2IHLJm" 
+   target="_blank"
+   class="bg-white border-2 border-slate-200 text-slate-700 font-bold ...">
+  <i class="ri-play-circle-fill text-blue-600 text-xl"></i> Lihat Video Profil
+</a>
+            </div>
+        </div>
+        
+        <div class="lg:col-span-5 relative flex justify-center">
+            <div class="w-full max-w-[450px] aspect-square bg-slate-200 border-2 border-dashed border-slate-300 rounded-3xl flex flex-col items-center justify-center p-8 relative shadow-inner overflow-hidden">
+            <img src="bdc.jpeg"
+                 alt="Foto Gedung Smk Budi Bakti"
+                 class="w-full h-full object-cover rounded-2x1">
+                
+                
+            <div class="absolute -bottom-4 bg-white border border-slate-100 shadow-xl px-4 py-2.5 rounded-full flex items-center gap-2 text-xs font-bold text-slate-700">
+                <i class="ri-checkbox-circle-fill text-emerald-500 text-lg"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="jurusan" class="bg-white py-20 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-blue-600 font-extrabold tracking-widest text-xs uppercase flex items-center justify-center gap-2">
+                <span class="w-6 h-[2px] bg-blue-600 inline-block"></span> Program Unggulan <span class="w-6 h-[2px] bg-blue-600 inline-block"></span>
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-blue-950 mt-3 tracking-tight">Kompetensi Keahlian</h2>
+            <p class="text-slate-500 mt-2 max-w-xl mx-auto text-sm sm:text-base">Pilih jurusan sesuai minatmu dan wujudkan masa depan gemilangmu!</p>
+
+            <div class="grid md:grid-cols-3 gap-8 mt-14 text-left">
+                <div class="group bg-amber-50/40 p-6 sm:p-8 rounded-3xl border border-amber-100/70 hover:shadow-xl hover:shadow-amber-500/5 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <span class="bg-red-500 text-white text-[10px] font-black px-2.5 py-1 rounded-md tracking-wider">DKV</span>
+                        <h3 class="text-xl font-bold text-slate-800 mt-4 group-hover:text-red-600 transition">Desain Komunikasi Visual</h3>
+                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">Kreatif dalam desain, siap berkarya di dunia visual dan multimedia.</p>
+                        
+                        <div class="w-full h-32 bg-slate-200 border border-dashed border-slate-300 rounded-xl my-5 flex items-center justify-center text-slate-400 text-xs">
+                           <img src="dkv.jpeg"
+                                alt="Foto Gedung Smk Budi Bakti"
+                                class="w-full h-full object-cover rounded-2x1"> 
+                            
+            
+                        </div>
+                        
+                        <ul class="text-xs text-slate-500 font-medium space-y-2">
+                            <li class="flex items-center gap-2"><i class="ri-checkbox-blank-circle-fill text-[6px] text-red-500"></i> Desain Grafis</li>
+                            <li class="flex items-center gap-2"><i class="ri-checkbox-blank-circle-fill text-[6px] text-red-500"></i> Ilustrasi & Fotografi</li>
+                            <li class="flex items-center gap-2"><i class="ri-checkbox-blank-circle-fill text-[6px] text-red-500"></i> Produksi Multimedia</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="text-red-600 font-bold text-sm mt-8 inline-flex items-center gap-1 group-hover:gap-2 transition-all">Lihat Detail <i class="ri-arrow-right-line"></i></a>
+                </div>
+
+                <div class="group bg-blue-50/40 p-6 sm:p-8 rounded-3xl border border-blue-100/70 hover:shadow-xl hover:shadow-blue-500/5 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <span class="bg-yellow-600 text-white text-[10px] font-black px-2.5 py-1 rounded-md tracking-wider">RPL</span>
+                        <h3 class="text-xl font-bold text-slate-800 mt-4 group-hover:text-yellow-600 transition">Rekayasa Perangkat Lunak</h3>
+                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">Bangun aplikasi dan sistem, wujudkan ide menjadi solusi digital.</p>
+                        
+                        <div class="w-full h-32 bg-slate-200 border border-dashed border-slate-300 rounded-xl my-5 flex items-center justify-center text-slate-400 text-xs">
+                            <img src="rpl cinta.jpeg"
+                                alt="Foto Gedung Smk Budi Bakti"
+                                class="w-full h-full object-cover rounded-2x1"> 
+                            
+                        </div>
+                        
+                        <ul class="text-xs text-slate-500 font-medium space-y-2">
+                            <li class="flex items-center gap-2"><i class="ri-checkbox-blank-circle-fill text-[6px] text-yellow-600"></i> Pemrograman Web & Mobile</li>
+                            <li class="flex items-center gap-2"><i class="ri-checkbox-blank-circle-fill text-[6px] text-yellow-600"></i> Basis Data (Database)</li>
+                            <li class="flex items-center gap-2"><i class="ri-checkbox-blank-circle-fill text-[6px] text-yellow-600"></i> Cloud Computing</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="text-yellow-600 font-bold text-sm mt-8 inline-flex items-center gap-1 group-hover:gap-2 transition-all">Lihat Detail <i class="ri-arrow-right-line"></i></a>
+                </div>
+
+                <div class="group bg-purple-50/40 p-6 sm:p-8 rounded-3xl border border-purple-100/70 hover:shadow-xl hover:shadow-purple-500/5 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <span class="bg-blue-600 text-white text-[10px] font-black px-2.5 py-1 rounded-md tracking-wider">BR</span>
+                        <h3 class="text-xl font-bold text-slate-800 mt-4 group-hover:text-blue-600 transition">Bisnis Daring</h3>
+                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">Kuasai bisnis online, strategi pemasaran, dan kewirausahaan digital.</p>
+                        
+                        <div class="w-full h-32 bg-slate-200 border border-dashed border-slate-300 rounded-xl my-5 flex items-center justify-center text-slate-400 text-xs">
+                            <img src="logo br.jpeg"
+                                alt="Foto Gedung Smk Budi Bakti"
+                                class="w-full h-full object-cover rounded-2x1"> 
+                            
+                        </div>
+                        
+                        <ul class="text-xs text-slate-500 font-medium space-y-2">
+                            <li class="flex items-center gap-2"><i class="ri-checkbox-blank-circle-fill text-[6px] text-blue-600"></i> Digital Marketing</li>
+                            <li class="flex items-center gap-2"><i class="ri-checkbox-blank-circle-fill text-[6px] text-blue-600"></i> Manajemen E-Commerce</li>
+                            <li class="flex items-center gap-2"><i class="ri-checkbox-blank-circle-fill text-[6px] text-blue-600"></i> Analisis Pasar & Bisnis</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="text-blue-600 font-bold text-sm mt-8 inline-flex items-center gap-1 group-hover:gap-2 transition-all">Lihat Detail <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="keunggulan" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-blue-950 tracking-tight">Keunggulan SMK Budi Bakti Ciwidey</h2>
+            <div class="w-16 h-1 bg-blue-600 mx-auto mt-3 rounded-full"></div>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-4 sm:gap-6 text-center">
+            <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-md transition">
+                <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 mx-auto flex items-center justify-center text-2xl mb-4"><i class="ri-user-voice-line"></i></div>
+                <h4 class="font-bold text-sm text-slate-800">Guru Profesional</h4>
+                <p class="text-[11px] text-slate-400 mt-1">Didampingi guru berpengalaman dan kompeten.</p>
+            </div>
+            <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-md transition">
+                <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 mx-auto flex items-center justify-center text-2xl mb-4"><i class="ri-building-4-line"></i></div>
+                <h4 class="font-bold text-sm text-slate-800">Fasilitas Lengkap</h4>
+                <p class="text-[11px] text-slate-400 mt-1">Lab modern dan sarana pendukung terbaik.</p>
+            </div>
+            <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-md transition">
+                <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 mx-auto flex items-center justify-center text-2xl mb-4"><i class="ri-macbook-line"></i></div>
+                <h4 class="font-bold text-sm text-slate-800">Kurikulum Industri</h4>
+                <p class="text-[11px] text-slate-400 mt-1">Sesuai kebutuhan terkini dunia kerja nyata.</p>
+            </div>
+            <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-md transition">
+                <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 mx-auto flex items-center justify-center text-2xl mb-4"><i class="ri-slideshow-3-line"></i></div>
+                <h4 class="font-bold text-sm text-slate-800">Praktik & Magang</h4>
+                <p class="text-[11px] text-slate-400 mt-1">Kesempatan terjun langsung di mitra industri.</p>
+            </div>
+            <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-md transition col-span-2 md:col-span-1 mx-auto w-full max-w-[200px] md:max-w-none">
+                <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 mx-auto flex items-center justify-center text-2xl mb-4"><i class="ri-handshake-line"></i></div>
+                <h4 class="font-bold text-sm text-slate-800">Penyaluran Kerja</h4>
+                <p class="text-[11px] text-slate-400 mt-1">Lulusan siap kerja dengan jaringan luas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-slate-100/70 py-16 border-y border-slate-200/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Social Proof</p>
+                <h3 class="text-xl font-bold text-slate-800 mt-1">Membangun kepercayaan melalui angka, statistik, akreditasi, atau testimoni.</h3>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-xs">
+                        <span class="text-3xl sm:text-4xl font-black text-blue-600 block">500+</span>
+                        <span class="text-xs font-semibold text-slate-500 mt-1 block">Siswa Aktif</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-xs">
+                        <span class="text-3xl sm:text-4xl font-black text-blue-600 block">10+</span>
+                        <span class="text-xs font-semibold text-slate-500 mt-1 block">Mitra Industri</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-xs">
+                        <span class="text-3xl sm:text-4xl font-black text-blue-600 block">20+</span>
+                        <span class="text-xs font-semibold text-slate-500 mt-1 block">Guru Profesional</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-xs">
+                        <span class="text-3xl sm:text-4xl font-black text-blue-600 block">100%</span>
+                        <span class="text-xs font-semibold text-slate-500 mt-1 block">Siap Kerja & Wirausaha</span>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-3 h-48 lg:h-full min-h-[180px] bg-slate-200 border-2 border-dashed border-slate-300 rounded-2xl flex items-center justify-center text-slate-400 text-sm">
+                 <img src="Screenshot 2026-02-08 132044.png"
+                 alt="Foto Gedung Smk Budi Bakti"
+                 class="w-full h-full object-cover rounded-2x1">
+                </div>
+
+                <div class="lg:col-span-4 bg-white p-8 rounded-2xl border border-slate-200/60 shadow-xs relative flex flex-col justify-center">
+                    <span class="text-6xl text-blue-200 font-serif absolute top-2 left-4 select-none">&ldquo;</span>
+                    <p class="text-slate-600 text-sm italic leading-relaxed relative z-10">
+                        Belajar di SMK Budi Bakti Ciwidey bisa membuat kalian bahagia :).
+                    </p>
+                    <div class="mt-4 border-t border-slate-100 pt-3">
+                        <h5 class="text-xs font-bold text-slate-800">— neng sri</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="bg-gradient-to-r from-blue-900 to-blue-700 rounded-3xl p-8 sm:p-12 text-white relative overflow-hidden shadow-xl grid md:grid-cols-12 gap-6 items-center">
+            <div class="md:col-span-8 space-y-3 z-10 text-center md:text-left">
+                <h2 class="text-2xl sm:text-3xl font-black tracking-tight">Siap Raih Masa Depanmu?</h2>
+                <p class="text-blue-100 text-sm sm:text-base max-w-xl">Bergabunglah bersama SMK Budi Bakti Ciwidey sekarang juga!</p>
+            </div>
+            <div class="md:col-span-4 text-center md:text-right z-10">
+                <a href="#" class="inline-block bg-white text-blue-950 font-bold px-8 py-3.5 rounded-full shadow-lg hover:bg-slate-50 transition">Daftar Sekarang &rarr;</a>
+            </div>
+            <div class="absolute right-0 bottom-0 w-32 h-32 bg-white/5 border border-dashed border-white/10 rounded-tl-3xl hidden md:block"></div>
+        </div>
+    </section>
+
+    <footer id="kontak" class="bg-slate-950 text-slate-400 pt-16 pb-8 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10">
+            
+            <div class="lg:col-span-4 space-y-4">
+                <div class="flex items-center space-x-3">
+                    <img src="thlogo smk.jfif" alt="Logo SMK Budi Bakti" class="w-10 h-10 object-contain">
+                    <span class="font-extrabold text-white text-base tracking-tight">SMK BUDI BAKTI CIWIDEY</span>
+                </div>
+                <p class="text-xs leading-relaxed max-w-sm">
+                    Smk Bisa,Smk Hebat
+                </p>
+                <div class="flex space-x-3 text-lg pt-2">
+                    <a href="#" class="w-8 h-8 bg-slate-900 rounded-lg flex items-center justify-center hover:text-white hover:bg-blue-600 transition"><i class="ri-facebook-fill"></i></a>
+                    <a href="#" class="w-8 h-8 bg-slate-900 rounded-lg flex items-center justify-center hover:text-white hover:bg-pink-600 transition"><i class="ri-instagram-line"></i></a>
+                    <a href="#" class="w-8 h-8 bg-slate-900 rounded-lg flex items-center justify-center hover:text-white hover:bg-blue-400 transition"><i class="ri-twitter-x-fill"></i></a>
+                    <a href="#" class="w-8 h-8 bg-slate-900 rounded-lg flex items-center justify-center hover:text-white hover:bg-red-600 transition"><i class="ri-youtube-fill"></i></a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-2 space-y-3">
+                <h5 class="text-sm font-bold text-white tracking-wider uppercase">Link Cepat</h5>
+                <ul class="space-y-2 text-xs font-medium">
+                    <li><a href="#beranda" class="hover:text-white transition">Beranda</a></li>
+                    <li><a href="#profil" class="hover:text-white transition">Profil</a></li>
+                    <li><a href="#jurusan" class="hover:text-white transition">Kompetensi Keahlian</a></li>
+                    <li><a href="#keunggulan" class="hover:text-white transition">Fasilitas</a></li>
+                    <li><a href="#" class="hover:text-white transition">Informasi</a></li>
+                </ul>
+            </div>
+
+            <div class="lg:col-span-3 space-y-3">
+                <h5 class="text-sm font-bold text-white tracking-wider uppercase">Informasi Kontak</h5>
+                <ul class="space-y-2.5 text-xs">
+                    <li class="flex items-start gap-2">
+                        <i class="ri-map-pin-2-line text-blue-500 text-sm mt-0.5"></i>
+                        <span>Jl.Babakantiga No.82, Ciwidey, Kec. Ciwidey, Kabupaten Bandung,       Jawa Barat40973</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="ri-phone-line text-blue-500 text-sm"></i>
+                        <span>083829447247</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="ri-instagram-line text-blue-500 text-sm"></i>
+                        <span>info@smkbudibakticiwidey</span>
+                    </li>
+                    
+                    </li>
+                </ul>
+            </div>
+
+            <div class="lg:col-span-3 space-y-3">
+                <h5 class="text-sm font-bold text-white tracking-wider uppercase">Jam Operasional</h5>
+                <p class="text-xs">Senin - Jumat <br><span class="text-white font-semibold">07.00 - 15.30 WIB</span></p>
+             <div class="rounded-xl overflow-hidden w-full h-48">
+  <iframe
+    src="https://maps.google.com/maps?q=SMK+Budi+Bakti+Ciwidey+Kabupaten+Bandung&output=embed"
+    width="100%"
+    height="100%"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</div>   
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-900 mt-12 pt-6 text-center text-[11px] font-medium tracking-wide">
+            &copy; 2026 SMK Budi Bakti Ciwidey. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Logika Navbar mengecil / berubah saat di-scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 40) {
+                navbar.classList.add('py-2', 'shadow-md');
+                navbar.classList.remove('py-4', 'shadow-sm');
+            } else {
+                navbar.classList.add('py-4', 'shadow-sm');
+                navbar.classList.remove('py-2', 'shadow-md');
+            }
+        });
+
+        // Logika Toggle Menu Mobile (Hamburger Menu)
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            
+            // Mengubah ikon hamburger menjadi ikon 'X' saat terbuka
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.className = 'ri-menu-3-line';
+            } else {
+                menuIcon.className = 'ri-close-line';
+            }
+        });
+
+        // Menutup menu mobile otomatis ketika salah satu link menu di-klik
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.className = 'ri-menu-3-line';
+            });
+        });
+    </script>
+</body>
+</html>
