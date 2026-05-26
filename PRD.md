@@ -109,12 +109,7 @@ SMK Budi Bakti Ciwidey membutuhkan platform digital terpusat untuk:
 
 ---
 
-## ️ LEMBAR PERSETUJUAN
-| Peran | Nama | Tanda Tangan | Tanggal |
-|-------|------|--------------|---------|
-| Product Owner (SMK) | __________________ | __________ | ____/____/____ |
-| Project Lead (Nexa Tech) | __________________ | __________ | ____/____/____ |
-| QA / Technical | __________________ | __________ | ____/____/____ |
+
 
 ---
 > 📎 **Dokumen ini hidup** — revisi via GitHub Issues.  
